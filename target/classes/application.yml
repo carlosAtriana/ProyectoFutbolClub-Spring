@@ -1,0 +1,17 @@
+server:
+  port: 8069
+spring:
+  application:
+    name: ProyectoFutbol
+  datasource:
+    driverClassName: org.h2.Driver
+    password: 321
+    url: jdbc:h2:mem:proyectofutbol
+    username: carlost
+  h2:
+    console:
+      enabled: true
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
